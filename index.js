@@ -2,9 +2,15 @@ window.onload = () => {
     const doSomething = document.getElementById('interesting');
 
     doSomething.onclick = () => {
-        const feetToInchesInput = document.getElementById("feetToInchesInput");
-        const feetToInchesDisplay = document.getElementById("feetToInchesDisplay");
-        feetToInchesDisplay.textContent = feetToInches(feetToInchesInput.value);
+        const setColor = (className) => {
+            console.log("SET CLASS TO", className);
+            var element = document.getElementById("form-section");
+            if (currentClass) {
+                element.classList.remove(currentClass);        
+            }
+            currentClass = className;
+            element.classList.add(className);
+        }
     }
 
 }
