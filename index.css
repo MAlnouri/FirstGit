@@ -7,8 +7,16 @@ body {
 li {
     color: red;
     font-size: 40px;
+    border-style: solid;
+    padding: 10px;
 }
 
 .alternate {
     color: blue;
+}
+
+button {
+    font-size: 50px;
+    border-color: green;
+    padding: 2px;
 }
