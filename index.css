@@ -1,5 +1,14 @@
- body {
+body {
     margin: 50px;
     font-family: Helvetica, sans-serif;
-    font-size: 150%;
+    font-size: 40px;
+}
+
+li {
+    color: red;
+    font-size: 40px;
+}
+
+.alternate {
+    color: blue;
 }
