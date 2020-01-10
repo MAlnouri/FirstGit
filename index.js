@@ -1,16 +1,21 @@
 window.onload = () => {
+
+    const addToList = {
+        appendToList: (list, value) => {
+            const li = document.createElement("li");
+            li.appendChild(document.createTextNode(value));
+            list.appendChild(li);
+        }
+    }
+
     const doSomething = document.getElementById('interesting');
 
+    var i = 0;
+
     doSomething.onclick = () => {
-        const setColor = (className) => {
-            console.log("SET CLASS TO", className);
-            var element = document.getElementById("form-section");
-            if (currentClass) {
-                element.classList.remove(currentClass);        
-            }
-            currentClass = className;
-            element.classList.add(className);
-        }
+        const myList = document.getElementById('addingList');
+        addToList.appendToList(myList, i);
+        i++;
     }
 
 }
